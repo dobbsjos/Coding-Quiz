@@ -1,3 +1,9 @@
-.container-fluid {
+.container {
+    text-align: center;
+}
+.main {
+    text-align: center;
+}
+.col-4 {
     text-align: center;
 }
