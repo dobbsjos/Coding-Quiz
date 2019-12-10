@@ -1,0 +1,1 @@
+document.getElementById('answer-1').innerHTML
