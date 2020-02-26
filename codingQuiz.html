@@ -9,55 +9,77 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="codingQuiz.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <br>
 <br>
 <h1 class="container">Coding Quiz</h1>
-<br>
-<br>
-<br>
-<div class="container main">
-    <div class="row-12" id="question">Question Goes Here!</div>
-</div>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-primary btn-lg" id="answer-1">Answer 1</button>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-primary btn-lg" id="answer-2">Answer 2</button>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-primary btn-lg" id="answer-3">Answer 3</button>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <button type="button" class="btn btn-primary btn-lg" id="answer-4">Answer 4</button>
-        </div>
-    </div>
-</div>
 
-<body>
+<body class="bg-secondary">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Code Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">High Scores <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>x
+            </li> -->
+            </ul>
+            <span class="navbar-text">
+                timer
+            </span>
+        </div>
+    </nav>
+
+    <!-- intro page -->
+    <div id="intro" class="container mt-5 pt-10 shadow p-3 mb-5 bg-white rounded" style="height: 500px">
+        <div class="row text-content mt-5">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>Code Quiz</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col message text-center border-2">
+                        <button type="button" class="btn btn-outline-primary start">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quiz pages -->
+    <div id="quiz-page" class="container d-none">
+        <div class="row">
+            <div id="question" class="col">
+                <h2 id="question-text"></h2>
+            </div>
+            <div class="row">
+                <div class=col>
+                    <ol id="quesion-list" class="">
+                        <li id="question1"></li>
+                        <li id="question2"></li>
+                        <li id="question3"></li>
+                        <li id="question4"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
